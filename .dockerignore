@@ -1,0 +1,23 @@
+# Ignore the test directory
+**/test/
+
+# Ignore all markdown files
+*.md
+
+# Ignore all solution files
+*.sln
+
+# Ignore obj and bin directories
+**/obj/
+**/bin/
+
+# Ignore git directory
+.git/
+
+# Ignore all log files
+*.log
+
+**/.idea
+**/.vs
+**/.vscode
+**/.DS_Store

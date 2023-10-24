@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Scrappy.Downloader-6319156d-2298-4c21-adef-84ac901f44c9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-rc.2.23479.6" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0-rc.2.23479.6"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scrappy.Core\Scrappy.Core.csproj" />
+  </ItemGroup>
+</Project>

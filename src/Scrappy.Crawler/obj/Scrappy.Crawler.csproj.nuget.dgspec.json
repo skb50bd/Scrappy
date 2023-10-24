@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/shakib/Projects/Scrappy/src/Scrappy.Crawler/Scrappy.Crawler.csproj": {}
+  },
+  "projects": {
+    "/Users/shakib/Projects/Scrappy/src/Scrappy.Core/Scrappy.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/shakib/Projects/Scrappy/src/Scrappy.Core/Scrappy.Core.csproj",
+        "projectName": "Scrappy.Core",
+        "projectPath": "/Users/shakib/Projects/Scrappy/src/Scrappy.Core/Scrappy.Core.csproj",
+        "packagesPath": "/Users/shakib/.nuget/packages/",
+        "outputPath": "/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/shakib/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.54, )"
+            },
+            "HtmlAgilityPack.CssSelectors.NetCore": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23479.6, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23479.6, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/shakib/Projects/Scrappy/src/Scrappy.Crawler/Scrappy.Crawler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/shakib/Projects/Scrappy/src/Scrappy.Crawler/Scrappy.Crawler.csproj",
+        "projectName": "Scrappy.Crawler",
+        "projectPath": "/Users/shakib/Projects/Scrappy/src/Scrappy.Crawler/Scrappy.Crawler.csproj",
+        "packagesPath": "/Users/shakib/.nuget/packages/",
+        "outputPath": "/Users/shakib/Projects/Scrappy/src/Scrappy.Crawler/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/shakib/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/shakib/Projects/Scrappy/src/Scrappy.Core/Scrappy.Core.csproj": {
+                "projectPath": "/Users/shakib/Projects/Scrappy/src/Scrappy.Core/Scrappy.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23479.6, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23479.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

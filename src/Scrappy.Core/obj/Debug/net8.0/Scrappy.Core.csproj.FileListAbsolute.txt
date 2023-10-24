@@ -1,0 +1,12 @@
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/bin/Debug/net8.0/Scrappy.Core.deps.json
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/bin/Debug/net8.0/Scrappy.Core.dll
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/bin/Debug/net8.0/Scrappy.Core.pdb
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.csproj.AssemblyReference.cache
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.AssemblyInfoInputs.cache
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.AssemblyInfo.cs
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.csproj.CoreCompileInputs.cache
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.dll
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/refint/Scrappy.Core.dll
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/Scrappy.Core.pdb
+/Users/shakib/Projects/Scrappy/src/Scrappy.Core/obj/Debug/net8.0/ref/Scrappy.Core.dll

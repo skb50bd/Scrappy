@@ -1,0 +1,55 @@
+version: '3'
+services:
+  rabbitmq:
+    image: "rabbitmq:management-alpine"
+    environment:
+      RABBITMQ_DEFAULT_USER: yourUser
+      RABBITMQ_DEFAULT_PASS: yourPassword
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-data:/Users/shakib/rabbitmq/data
+    networks:
+      - scrappy-net
+  crawler:
+    build:
+      context: .
+      dockerfile: ./src/Scrappy.Crawler/Dockerfile
+    image: crawler:latest
+    environment:
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__Username: yourUser
+      RabbitMq__Password: yourPassword
+    networks:
+      - scrappy-net
+    depends_on:
+      - rabbitmq
+  downloader:
+    build:
+      context: .
+      dockerfile: ./src/Scrappy.Downloader/Dockerfile
+    image: downloader:latest
+    environment:
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__Username: yourUser
+      RabbitMq__Password: yourPassword
+      DownloadPath: /var/scrappy/data/
+    networks:
+      - scrappy-net
+    volumes:
+      - scrappy-downloader-data:/var/scrappy/data/
+    depends_on:
+      - crawler
+
+volumes:
+  rabbitmq-data:
+    driver: local
+  scrappy-downloader-data:
+    driver: local
+
+networks:
+  scrappy-net:
+    driver: bridge
