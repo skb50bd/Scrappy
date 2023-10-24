@@ -30,17 +30,31 @@ The project is built using C# and is designed to be highly modular and scalable.
     cd Scrappy
     ```
 
-- Build the project:
+- Build the docker images:
 
     ```shell
-    dotnet build
+    docker compose build
     ```
 
 - Run the Docker Compose file to set up RabbitMQ:
 
     ```shell
-    docker compose up -d
+    docker compose up rabbitmq -d
     ```
+
+- Run the Docker Compose file to set up the Scrappy Crawler:
+
+    ```shell
+    docker compose up crawler -d
+    ```
+
+- Run the Docker Compose file to set up the Scrappy Downloader:
+
+    ```shell
+    docker compose up downloader -d
+    ```
+
+- The files will be stored in **`docker-volumes/scrappy-downloader-data/`**
 
 ## Contributing
 
