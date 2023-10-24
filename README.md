@@ -39,7 +39,7 @@ The project is built using C# and is designed to be highly modular and scalable.
 - Run the Docker Compose file to set up RabbitMQ:
 
     ```shell
-    docker-compose up -d
+    docker compose up -d
     ```
 
 ## Contributing
